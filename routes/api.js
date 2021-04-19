@@ -17,7 +17,7 @@ router.get("/workouts", async (req, res) => {
     }
 });
 
-router.get("workouts/range", async (req, res) => {
+router.get("/workouts/range", async (req, res) => {
     try {
         const workoutData = await db.Workout.aggregate([
             {
